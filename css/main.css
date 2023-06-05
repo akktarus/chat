@@ -1,0 +1,42 @@
+body {
+  height: 100vh;
+  width: 100%;
+}
+div {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+.main-body {
+  flex-direction: column;
+}
+.main-header {
+  flex-direction: row;
+}
+#content-left,
+#content-right {
+  flex-direction: column;
+}
+.input{
+    margin-top: 20px;
+}
+#main-main{
+    height: 50%;
+    margin-top: 50px;
+}
+#main-main input{
+width: 90%;
+}
+#main-content-message{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.msgp1{
+  color: blue;
+}
+.msgp2{
+  color: red;
+}

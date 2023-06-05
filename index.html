@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Chat</title>
+  </head>
+  <body>
+    <div class="main-body">
+      <header id="main-header">
+        <div class="main-header">
+          <div id="content-left">
+            <div class="pseudo-left">
+              <p class="pseudo">Pseudo :</p>
+            </div>
+            <div id="pseudo-text-left">
+              <input type="text" name="pseudo-p1" id="left-pseudo" />
+            </div>
+            <div class="message-left">
+              <p class="pseudo">Message :</p>
+            </div>
+            <div id="message-content-left">
+              <input type="text" name="message-p1" id="message-p1" />
+            </div>
+            <div class="input">
+              <input
+                type="button"
+                value="send"
+                id="send-p1"
+                onclick="getName(this.id)"
+              />
+            </div>
+          </div>
+          <div id="content-right">
+            <div class="pseudo-right">
+              <p class="pseudo">Pseudo :</p>
+            </div>
+            <div id="pseudo-text-right">
+              <input type="text" name="pseudo-p2" id="right-pseudo" />
+            </div>
+            <div class="message-right">
+              <p class="pseudo">Message :</p>
+            </div>
+            <div id="message-content-right">
+              <input type="text" name="message-p2" id="message-p2" />
+            </div>
+
+            <div class="input">
+              <input
+                type="button"
+                value="send"
+                id="send-p2"
+                onclick="getName(this.id)"
+                ,
+              />
+            </div>
+          </div>
+        </div>
+      </header>
+      <main id="main-main">
+        <div id="message-box">
+          <div
+            type="text"
+            name="main-message"
+            id="main-content-message"
+            readonly
+          />
+        </div>
+      </main>
+      <footer id="main-footer"></footer>
+    </div>
+  </body>
+  <script src="./js/main.js"></script>
+</html>
